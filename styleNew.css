@@ -1,0 +1,9 @@
+/* element selector */
+h1 {
+  color: aquamarine;
+}
+/* id selector */
+#redText {
+  color: aqua;
+}
+/* class selector */

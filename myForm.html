@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>問卷調查</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <!--這是問卷調查-->
+    <h1 class="heading">問卷調查</h1>
+    <form action="" method="GET">
+      <label for="name">姓名：</label>
+      <input
+        id="name"
+        type="text"
+        name="InputName"
+        required
+        placeholder="請輸入真實姓名"
+      />
+      <br />
+      <label for="gender">性別：</label>
+      <select name="gender" id="gender">
+        <option></option>
+        <option value="male">男性</option>
+        <option value="female">女性</option>
+        <option value="other">其他</option>
+      </select>
+      <br />
+      <input id="male" type="radio" name="gender" value="male" required />
+      <label for="male">男性</label>
+      <input id="female" type="radio" name="gender" value="male" />
+      <label for="female">女性</label>
+      <input id="other" type="radio" name="gender" value="male" />
+      <label for="other">其他</label>
+      <br />
+      <label for="tele">電話：</label>
+      <input id="tele" type="text" name="telephone" />
+      <br />
+      <label for="email">信箱：</label>
+      <input id="email" type="email" name="" value="" />
+      <br />
+      <label for="age">年齡：</label>
+      <input
+        id="age"
+        type="number"
+        name="age"
+        min="0"
+        max="150"
+        required
+        step="1"
+      />
+      <br />
+      <label for="area">地區：</label>
+      <label list="areaList" type="text" name="area" id="area" />
+      <datalist id="areaList">
+        <option value="基隆市">基隆</option>
+        <option value="台北市">台北</option>
+        <option value="新北市">新北</option>
+      </datalist>
+      <hr />
+      <label for="suggestion">意見回饋：</label>
+      <br />
+      <textarea
+        name="suggestion"
+        id="suggestion"
+        cols=""
+        rows=""
+        placeholder="感謝提供建議！"
+      ></textarea>
+      <br />
+      <input
+        type="checkbox"
+        id="checkbox"
+        name="news"
+        value="newspaper"
+        checked
+      />
+      <label for="">訂閱電子報</label>
+      <br />
+      <button type="submit">提交表單</button>
+    </form>
+  </body>
+</html>
